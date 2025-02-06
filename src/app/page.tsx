@@ -1,6 +1,9 @@
+import Header from "@/sections/Header";
 
 export default function Home() {
   return (
-    <h1>Saas Landing Page</h1>
+    <>
+      <Header/>
+    </>
   );
 }
