@@ -11,9 +11,7 @@ const Hero = () => {
                 <div className="container mx-auto">
                     <div className="md:flex items-center">
                         <div className="md:w-[478px]">
-                            <div className="border-[#222]/10 px-3 py-1 tracking-tight rounded-lg border inline-flex">
-                                Version 2 is here.
-                            </div>
+                            <div className="tag">Version 2 is here.</div>
                             <h1 className="text-5xl md:text-7xl font-bold block bg-gradient-to-b from-black to-[#001E80] text-transparent bg-clip-text mt-6">
                                 Pathway to productivity
                             </h1>
