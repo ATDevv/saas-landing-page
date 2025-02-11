@@ -51,7 +51,7 @@ const Hero = () => {
                                 src={noodleImage}
                                 alt="Noodle Image"
                                 height={220}
-                                className="absolute top-[574px] left-[448px] rotate-[30deg]"
+                                className="hidden md:block absolute top-[574px] left-[448px] rotate-[30deg]"
                             />
                         </div>
                     </div>

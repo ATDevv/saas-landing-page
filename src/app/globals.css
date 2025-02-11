@@ -4,14 +4,18 @@
 
 @layer components {
     .btn {
-        @apply px-4 py-2 rounded-lg font-medium
+        @apply px-4 py-2 rounded-lg font-medium;
     }
 
     .btn-primary {
-        @apply bg-black text-white
+        @apply bg-black text-white;
     }
 
     .btn-text {
-        @apply text-black bg-transparent
+        @apply text-black bg-transparent;
+    }
+
+    .logo-ticker-img {
+        @apply h-8 w-auto;
     }
 }
