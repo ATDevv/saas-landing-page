@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 const ProductShowCase = () => {
     return (
-        <section className="bg-gradient-to-b from-white to-[#D2DCFF]] py-24 overflow-x-clip">
+        <section className="bg-gradient-to-b from-white to-[#D2DCFF] py-24 overflow-x-clip">
             <div className=" px-5 flex flex-col justify-center items-center">
                 <div className="tag">Dinh Tuan Anh</div>
                 <h2 className="max-w-[550px] text-center text-4xl md:text-6xl md:leading-[60px] font-semibold tracking-tight bg-gradient-to-b from-black to-[#001E80] text-transparent bg-clip-text mt-5">
