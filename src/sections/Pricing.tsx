@@ -1,4 +1,5 @@
 import CheckIcon from '@/assets/check.svg'
+import { twMerge } from 'tailwind-merge'
 
 const pricingTiers = [
     {
@@ -63,7 +64,7 @@ interface IPricing {
 
 const Pricing = () => {
     return (
-        <section className="py-24">
+        <section className="py-24 px-5">
             <div className="container mx-auto">
                 <div className="flex flex-col justify-center items-center">
                     <h2 className="text-4xl md:text-6xl md:leading-[60px] font-semibold tracking-tight bg-gradient-to-b from-black to-[#001E80] text-transparent bg-clip-text">
@@ -75,7 +76,7 @@ const Pricing = () => {
                         officia
                     </p>
                 </div>
-                <div className="">
+                <div className="flex flex-col gap-6 items-center mt-10 lg:flex-row lg:items-end lg:justify-center">
                     {pricingTiers.map(
                         ({
                             title,
@@ -86,14 +87,25 @@ const Pricing = () => {
                             features,
                         }: IPricing) => {
                             return (
-                                <div className="p-10 border border-[#f1f1f1] rounded-3xl shadow-lg">
+                                <div
+                                    className={twMerge(
+                                        'p-10 border border-[#f1f1f1] rounded-3xl shadow-lg m-5 max-w-sm w-full',
+                                        inverse &&
+                                            'bg-black border-black text-white'
+                                    )}
+                                >
                                     <div className="flex justify-between">
-                                        <h3 className="text-lg font-bold text-black/50">
+                                        <h3
+                                            className={twMerge(
+                                                'text-lg font-bold text-black/50',
+                                                inverse && 'text-white/60'
+                                            )}
+                                        >
                                             {title}
                                         </h3>
                                         {popular && (
-                                            <div className="inline-flex text-sm px-4 py-1.5 rounded-xl border border-black">
-                                                <span className="font-medium text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-orange-500 to-purple-500">
+                                            <div className="inline-flex text-sm px-4 py-1.5 rounded-xl border border-[#ccc]">
+                                                <span className="font-medium text-transparent bg-clip-text bg-gradient-to-r from-green-500 via-orange-500 to-purple-500">
                                                     Popular
                                                 </span>
                                             </div>
@@ -107,7 +119,12 @@ const Pricing = () => {
                                             /month
                                         </span>
                                     </div>
-                                    <button className="btn btn-primary w-full mt-[30px]">
+                                    <button
+                                        className={twMerge(
+                                            'btn btn-primary w-full mt-[30px]',
+                                            inverse && 'bg-white text-black'
+                                        )}
+                                    >
                                         {buttonText}
                                     </button>
                                     <ul className="flex flex-col gap-5 mt-6">
