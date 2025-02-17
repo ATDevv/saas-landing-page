@@ -67,9 +67,7 @@ const Pricing = () => {
         <section className="py-24 px-5 bg-white">
             <div className="container mx-auto">
                 <div className="flex flex-col justify-center items-center">
-                    <h2 className="text-4xl md:text-6xl md:leading-[60px] font-semibold tracking-tight bg-gradient-to-b from-black to-[#001E80] text-transparent bg-clip-text">
-                        Pricing
-                    </h2>
+                    <h2 className="section-title"> Pricing</h2>
                     <p className="text-center max-w-[600px] text-[22px] leading-[30px] tracking-tight mt-5">
                         Lorem ipsum dolor, sit amet consectetur adipisicing
                         elit. Corrupti ab repellat, sint dignissimos quo quam

@@ -85,7 +85,7 @@ const TestimonialsCol = (props: {
     <div className={twMerge('flex flex-col mt-5', props.className)}>
         {props.testimonials.map(
             ({ text, imageSrc, name, username }: IProps) => (
-                <div className="p-10 border border-[#f1f1f1] rounded-3xl shadow-lg m-5 max-w-sm w-full">
+                <div className="p-10 border border-[#f1f1f1] rounded-3xl shadow-lg my-5 max-w-sm w-full">
                     <div> {text}</div>
                     <div className="flex items-center gap-2 mt-5">
                         <Image
@@ -112,13 +112,11 @@ const TestimonialsCol = (props: {
 
 const Testimonials = () => {
     return (
-        <section className="bg-white px-7">
+        <section className="bg-white px-8">
             <div className="container mx-auto">
                 <div className="flex flex-col items-center gap-6">
                     <h2 className="tag">Testimonials</h2>
-                    <h2 className="text-4xl md:text-6xl md:leading-[60px] font-semibold tracking-tight bg-gradient-to-b from-black to-[#001E80] text-transparent bg-clip-text">
-                        What our users say
-                    </h2>
+                    <h2 className='section-title'> What our users say</h2>
                     <p className="text-center max-w-[600px] text-[22px] leading-[30px] tracking-tight mt-5">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Laboriosam dolores quaerat velit molestias non culpa
