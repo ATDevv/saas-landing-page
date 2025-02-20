@@ -1,5 +1,6 @@
 import CheckIcon from '@/assets/check.svg'
 import { twMerge } from 'tailwind-merge'
+import {motion} from 'framer-motion'
 
 const pricingTiers = [
     {
@@ -86,6 +87,7 @@ const Pricing = () => {
                         }: IPricing) => {
                             return (
                                 <div
+                                    key={title}
                                     className={twMerge(
                                         'p-10 border border-[#f1f1f1] rounded-3xl shadow-lg m-5 max-w-sm w-full',
                                         inverse &&

@@ -8,7 +8,7 @@ const CalltoAction = () => {
         <section className="bg-gradient-to-b from-white to-[#D2DCFF] py-24 px-10 overflow-x-clip">
             <div className="container mx-auto flex flex-col items-center justify-center">
                 <div className="relative">
-                    <h2 className="section-title">Sign up for free today</h2>
+                    <h2 className="section-title text-center">Sign up for free today</h2>
                     <p className="text-center max-w-[600px] text-[22px] leading-[30px] tracking-tight mt-5">
                         Lorem ipsum dolor, sit amet consectetur adipisicing
                         elit. Velit architecto sit culpa sequi similique dolorem
