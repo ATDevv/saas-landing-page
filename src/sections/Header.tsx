@@ -24,11 +24,11 @@ const Header = () => {
                             />
                             <MenuIcon className="w-6 h-6 md:hidden" />
                             <nav className="hidden md:flex gap-6 items-center justify-center text-black/60">
-                                <Link href={'#'}>About</Link>
-                                <Link href={'#'}>Features</Link>
-                                <Link href={'#'}>Customers</Link>
-                                <Link href={'#'}>Updates</Link>
-                                <Link href={'#'}>Help</Link>
+                                <Link href={'/about'}>About</Link>
+                                <Link href={'/features'}>Features</Link>
+                                <Link href={'/customers'}>Customers</Link>
+                                <Link href={'/updates'}>Updates</Link>
+                                <Link href={'/help'}>Help</Link>
                                 <button className="bg-black px-4 py-2 text-white rounded-lg font-medium">
                                     Get for free
                                 </button>
